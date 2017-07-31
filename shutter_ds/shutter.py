@@ -1,5 +1,5 @@
 """
-This module contains device class BeamEnergy and run method for it.
+This module contains device class Shutter and run method for it.
 """
 
 # Imports
