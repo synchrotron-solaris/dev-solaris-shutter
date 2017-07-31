@@ -36,7 +36,7 @@ class Shutter(Facade):
     ShutterOpen = proxy_attribute(
         dtype=bool,
         access=AttrWriteType.READ,
-        property_name="PlcAttrName_OpenS",
+        property_name="PLCAttrName_OpenS",
         display_level=DispLevel.OPERATOR,
         description="Attribute that represents PLC signal for shutter open "
                     "state.")
@@ -44,7 +44,7 @@ class Shutter(Facade):
     ShutterClosed = proxy_attribute(
         dtype=bool,
         access=AttrWriteType.READ,
-        property_name="PlcAttrName_ClosedS",
+        property_name="PLCAttrName_ClosedS",
         display_level=DispLevel.OPERATOR,
         description="Attribute that represents PLC signal for shutter closed "
                     "state.")
@@ -52,7 +52,7 @@ class Shutter(Facade):
     ShutterInterlock = proxy_attribute(
         dtype=bool,
         access=AttrWriteType.READ,
-        property_name="PlcAttrName_InterlockA",
+        property_name="PLCAttrName_InterlockA",
         display_level=DispLevel.OPERATOR,
         description="Attribute that represents PLC signal for shutter in "
                     "interlock alarm.")
@@ -62,8 +62,8 @@ class Shutter(Facade):
     @proxy_command(
         dtype_out=bool,
         write_attribute=True,
-        property_name="PlcAttrName_OpenC",
-        doc_out="True to PlcAttrName_OpenC")
+        property_name="PLCAttrName_OpenC",
+        doc_out="True to PLCAttrName_OpenC")
     def Open(self, subcommand):
         """
          :rtype: bool
@@ -74,8 +74,8 @@ class Shutter(Facade):
     @proxy_command(
         dtype_out=bool,
         write_attribute=True,
-        property_name="PlcAttrName_CloseC",
-        doc_out="True to PlcAttrName_CloseC")
+        property_name="PLCAttrName_CloseC",
+        doc_out="True to PLCAttrName_CloseC")
     def Close(self, subcommand):
         """
         :rtype: bool
